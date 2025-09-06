@@ -4,7 +4,7 @@ import tseslint, { parser } from 'typescript-eslint';
 
 const stylisticRules: Partial<Record<string, any>> = {
   '@stylistic/block-spacing': 'error',
-  '@stylistic/newline-per-chained-call': ['error', { ignoreChainWithDepth: 1 }],
+  '@stylistic/newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
   '@stylistic/array-bracket-spacing': ['error', 'never'],
   '@stylistic/comma-dangle': ['error', 'never'],
   '@stylistic/indent': ['error', 2],
