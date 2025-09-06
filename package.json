@@ -1,0 +1,23 @@
+{
+  "name": "@dklages/eslint-config",
+  "version": "0.0.1",
+  "author": "Dallas Klages",
+  "main": "eslint.config.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "@eslint/js": "^9.34.0",
+    "@stylistic/eslint-plugin": "^5.3.1",
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "typescript-eslint": "^8.41.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.6",
+    "typescript": "^5.9.2",
+    "@types/node": "^24.3.0"
+  }
+}
