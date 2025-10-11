@@ -43,7 +43,13 @@ const stylisticRules: Partial<Record<string, any>> = {
 export default tseslint.config(
   stylistic.configs.recommended,
   {
-    files: ['src/**/*.ts', 'src/**/*.js', 'eslint.config.ts'],
+    files: [
+      'src/**/*.ts',
+      'src/**/*.js',
+      'src/**/*.tsx',
+      'src/**/*.jsx',
+      'eslint.config.ts'
+    ],
     plugins: {
       '@stylistic': stylistic
     },
@@ -54,7 +60,10 @@ export default tseslint.config(
       parser,
       parserOptions: {
         project: [path.resolve(process.cwd(), 'tsconfig.json')],
-        tsconfigRootDir: path.resolve(process.cwd())
+        tsconfigRootDir: path.resolve(process.cwd()),
+        ecmaFeatures: {
+          jsx: true
+        }
       }
     }
   }
