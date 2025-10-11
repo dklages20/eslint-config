@@ -1,6 +1,6 @@
 {
   "name": "@dklages/eslint-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Dallas Klages",
   "main": "eslint.config.ts",
   "scripts": {
